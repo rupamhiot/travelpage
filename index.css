@@ -169,7 +169,8 @@ span {
 
 .about-image {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -524,6 +525,9 @@ footer{
     .about{
         flex-direction: column;
         
+    }
+    .about-image{
+        flex-wrap: wrap;
     }
     .about-image img{
         height: 45rem;
