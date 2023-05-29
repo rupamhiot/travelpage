@@ -77,6 +77,7 @@ section {
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: cover;
+    background-position: center;
 }
 
 .home1 {
@@ -168,6 +169,7 @@ span {
 
 .about-image {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -461,4 +463,125 @@ footer{
 }
 .footer-icontop a:hover{
     box-shadow: 0 0 1rem var(--text-color1);
+}
+@media (max-width:1200px)
+{
+    html{
+        font-size: 60%;
+    }
+}
+@media (max-width:990px)
+{
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width:750px)
+{
+    #menu-icon{
+        display: block;
+        color: var(--text-color1);
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        width: 100%;
+        padding: 2rem 3%;
+        /* background: var(--bg-color); */
+        /* background: var(--text-color1); */
+        background: #e1f7dc;
+        border-top:.1rem solid rgba(0,0,0,.2) ;
+        /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.2); */
+        display: none;
+        /* color: var(--text-color); */
+
+    }
+    .navbar.active{
+        display: block;
+        transition: 3s;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        /* color: var(--text-color); */
+    }
+    .home-content h3{
+        font-size:4rem ;
+    }
+    .about{
+        flex-direction: column;
+        
+    }
+    .about-image img{
+        height: 45rem;
+        width: 45rem;
+    }
+    .home{
+        /* background-size: 100rem; */
+        
+        
+    }
+    .discover-images{
+        justify-content: center;
+    }
+    .box img{
+        height: 45rem;
+        width: 45rem;
+    }
+    .video-container{
+
+    }
+    iframe{
+        height: 36rem;
+        width: 63.5rem;
+    }
+    .card{
+        font-size: 3rem;
+        
+        
+    }
+        .package-box{
+            gap: 2rem;
+        }
+
+        .in{
+            width: 80%;
+        }
+}
+@media(max-width:620px)
+{
+    iframe{
+        height: 36rem;
+        width: 53.5rem;
+    } 
+}
+@media(max-width:400px){
+    .about-image img{
+        height: 30rem;
+        width: 30rem;
+    }
+    .box img{
+        height: 30rem;
+        width: 30rem;
+    }
+    iframe{
+        height: 20rem;
+        width: 35rem;
+    } 
+    .sub-content h1{
+        font-size: 2rem;
+    }
+    .footer-text p{
+        font-size: 1.2rem;
+    }
+
 }
