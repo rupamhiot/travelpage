@@ -590,5 +590,12 @@ footer{
     .card-head-content h3{
         font-size: 2.8rem;
     }
+    .subscribe{
+        height: 20rem;
+    }
+    .header{
+        /* background: var(--fourth--bg-color); */
+        /* height: 1rem; */
+    }
 
 }
